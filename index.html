@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tavls Squares — Football Squares</title>
+  <link rel="icon" href="assets/blu-mascot.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="m-top">
+    <img src="assets/tavls-logo.png" alt="Tavls" class="m-logo" />
+    <div class="m-account"><span class="m-user" id="mUser">@you</span><span class="m-bal" id="mBal">$250.00</span></div>
+  </header>
+  <div class="app-layout">
+    <aside class="side-nav">
+      <div class="side-logo"><img src="assets/tavls-logo.png" alt="Tavls" /></div>
+      <div class="side-account">
+        <img class="side-avatar" src="assets/blu-mascot.png" alt="" />
+        <div class="side-meta">
+          <div class="side-user" id="sideUser">@you</div>
+          <div class="side-bal">Balance: <span id="sideBal">$250.00</span></div>
+        </div>
+      </div>
+      <nav class="side-tabs" id="sideTabs"></nav>
+      <div class="side-foot">
+        <img src="assets/blu-mascot.png" class="foot-blu" alt="" />
+        <span>Football Squares<br/><b>powered by Tavls</b></span>
+      </div>
+    </aside>
+    <main class="main" id="view"></main>
+  </div>
+  <nav class="m-bottom" id="mBottom"></nav>
+  <div class="toast" id="toast"></div>
+  <div class="confetti-overlay hidden" id="confetti"><div class="congrats" id="congrats"></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
