@@ -79,7 +79,7 @@ button{font-family:inherit;cursor:pointer}
 
 /* Board */
 .board-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;overflow-x:auto}
-.board{display:grid;grid-template-columns:repeat(11,1fr);gap:4px;min-width:680px}
+.board{display:grid;grid-template-columns:repeat(11,1fr);gap:clamp(2px,.4vw,4px)}
 .cell{aspect-ratio:1;border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative}
 .corner{background:transparent;flex-direction:column;gap:1px;font-size:clamp(8px,.8vw,11px);color:var(--muted);text-align:center;line-height:1.1}
 .corner .ca{color:var(--teamA);font-weight:800}.corner .cb{color:var(--teamB);font-weight:800}
